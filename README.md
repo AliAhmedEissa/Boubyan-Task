@@ -2,7 +2,7 @@
 
 A modern Android application that displays articles from The New York Times API, built with Clean Architecture principles and modern Android development practices.
 
-📱 Screenshots
+## Screenshots
 <div align="center">
 <table>
 <tr>
@@ -18,13 +18,12 @@ A modern Android application that displays articles from The New York Times API,
 </table>
 </div>
 <!-- Alternative: If Google Drive doesn't work, use this format:
-## 📱 Screenshots
 
 | Articles List | Article Details |
 |:---:|:---:|
-| ![Articles List](screenshots/articles_list.png) | ![Article Details](screenshots/article_details.png)
+| ![Articles List](screenshots/articles_list.png) | ![Article Details](screenshots/article_details.png) |
 
-
+Note: Screenshots are stored in the `screenshots/` folder of this repository.
 -->
 
 ## Features
