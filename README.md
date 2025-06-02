@@ -10,7 +10,6 @@ A modern Android application that displays articles from The New York Times API,
 - Sort articles by views, date, and title
 - View detailed article information
 - Responsive and modern UI with animations
-- Offline support with caching
 - Error handling and user-friendly messages
 
 ## Architecture
@@ -39,7 +38,7 @@ Contains feature-specific implementations:
 ## Technical Stack
 
 - **Language**: Kotlin
-- **Architecture**: Clean Architecture with MVVM
+- **Architecture**: Clean Architecture with MVI
 - **Dependency Injection**: Hilt
 - **Networking**: Retrofit2 + OkHttp3
 - **Asynchronous**: Kotlin Coroutines + Flow
