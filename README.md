@@ -25,6 +25,7 @@ A modern Android application that displays articles from The New York Times API,
 | ![Articles List](screenshots/articles_list.png) | ![Article Details](screenshots/article_details.png)
 
 
+-->
 
 ## Features
 
