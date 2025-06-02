@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">NYTimesApp</string>
+
+    <!-- Navigation -->
+    <string name="navigation_articles">Articles</string>
+    <string name="navigation_favorites">Favorites</string>
+    <string name="navigation_settings">Settings</string>
+
+    <!-- Articles -->
+    <string name="articles_title">Most Popular Articles</string>
+    <string name="article_detail_title">Article Details</string>
+    <string name="search_articles_hint">Search articles...</string>
+    <string name="no_articles_found">No articles found</string>
+    <string name="pull_to_refresh">Pull down to refresh</string>
+
+    <!-- Actions -->
+    <string name="action_search">Search</string>
+    <string name="action_share">Share</string>
+    <string name="action_bookmark">Bookmark</string>
+    <string name="action_open_browser">Open in Browser</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_refresh">Refresh</string>
+
+    <!-- Time Periods -->
+    <string name="period_1_day">Last Day</string>
+    <string name="period_7_days">Last Week</string>
+    <string name="period_30_days">Last Month</string>
+
+    <!-- Content Descriptions -->
+    <string name="cd_article_image">Article image</string>
+    <string name="cd_back_button">Back</string>
+    <string name="cd_menu_button">Menu</string>
+    <string name="cd_search_button">Search</string>
+    <string name="cd_clear_search">Clear search</string>
+
+    <!-- Loading and Error States -->
+    <string name="loading_articles">Loading articles...</string>
+    <string name="loading_article_details">Loading article details...</string>
+    <string name="searching_articles">Searching articles...</string>
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_general">Something went wrong. Please try again.</string>
+</resources>
