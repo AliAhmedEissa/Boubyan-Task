@@ -2,6 +2,30 @@
 
 A modern Android application that displays articles from The New York Times API, built with Clean Architecture principles and modern Android development practices.
 
+📱 Screenshots
+<div align="center">
+<table>
+<tr>
+<td>
+<img src="https://drive.google.com/uc?export=view&id=1mYkG8L6QBUyu2cM9EYdUS-5mewHJcVnS" alt="Articles List" width="300"/>
+<br><b>Articles List</b>
+</td>
+<td>
+<img src="https://drive.google.com/uc?export=view&id=1XPFhExcV28EGnB-jwkFdW4lV0e7CU2LA" alt="Article Details" width="300"/>
+<br><b>Article Details</b>
+</td>
+</tr>
+</table>
+</div>
+<!-- Alternative: If Google Drive doesn't work, use this format:
+## 📱 Screenshots
+
+| Articles List | Article Details |
+|:---:|:---:|
+| ![Articles List](screenshots/articles_list.png) | ![Article Details](screenshots/article_details.png) |
+
+-->
+
 ## Features
 
 - View most popular articles from NY Times
