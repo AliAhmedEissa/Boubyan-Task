@@ -1,182 +1,198 @@
-NY Times App
+# NY Times App
+
 A modern Android application that displays articles from The New York Times API, built with Clean Architecture principles and modern Android development practices.
 
-📱 Screenshots
-<div align="center"> <table> <tr> <td align="center"> <img src="https://drive.google.com/uc?export=view&id=1mYkG8L6QBUyu2cM9EYdUS-5mewHJcVnS" alt="Articles List" width="300"/> <br><b>Articles List</b> </td> <td align="center"> <img src="https://drive.google.com/uc?export=view&id=1XPFhExcV28EGnB-jwkFdW4lV0e7CU2LA" alt="Article Details" width="300"/> <br><b>Article Details</b> </td> </tr> </table> </div> <!-- Alternative: If Google Drive doesn't work, use this format: | Articles List | Article Details | |:---:|:---:| | ![Articles List](screenshots/articles_listd in the `screenshots/` folder of this repository. -->
-✨ Features
-📰 Article Browsing: View most popular articles from NY Times
+## 📱 Screenshots
 
-🔍 Search Functionality: Search articles by keywords
+<div align="center">
+<table>
+<tr>
+<td align="center">
+<img src="https://drive.google.com/uc?export=view&id=1mYkG8L6QBUyu2cM9EYdUS-5mewHJcVnS" alt="Articles List" width="300"/>
+<br><b>Articles List</b>
+</td>
+<td align="center">
+<img src="https://drive.google.com/uc?export=view&id=1XPFhExcV28EGnB-jwkFdW4lV0e7CU2LA" alt="Article Details" width="300"/>
+<br><b>Article Details</b>
+</td>
+</tr>
+</table>
+</div>
 
-🏷️ Advanced Filtering: Filter articles by section and media presence
+<!-- Alternative: If Google Drive doesn't work, use this format:
 
-📊 Smart Sorting: Sort articles by views, date, and title
+| Articles List | Article Details |
+|:---:|:---:|
+|  |  |
 
-📖 Detailed View: View comprehensive article information
+Note: Screenshots are stored in the `screenshots/` folder of this repository.
+-->
 
-🎨 Modern UI: Responsive design with smooth animations
+## ✨ Features
 
-⚠️ Error Handling: User-friendly error messages and states
+- **📰 Article Browsing**: View most popular articles from NY Times
+- **🔍 Search Functionality**: Search articles by keywords
+- **🏷️ Advanced Filtering**: Filter articles by section and media presence
+- **📊 Smart Sorting**: Sort articles by views, date, and title
+- **📖 Detailed View**: View comprehensive article information
+- **🎨 Modern UI**: Responsive design with smooth animations
+- **⚠️ Error Handling**: User-friendly error messages and states
 
-🏗️ Architecture
-The project follows Clean Architecture principles and is organized into modular components:
+## 🏗️ Architecture
 
-Core Module
+The project follows **Clean Architecture** principles and is organized into modular components:
+
+### Core Module
 Contains shared infrastructure and utilities:
+- **Base Classes**: Repository, UseCase, and ViewModel foundations
+- **Network Layer**: OkHttp and Retrofit configuration
+- **Error Management**: Centralized error handling and mapping
+- **Resource Wrapper**: State management for data operations
+- **Dependency Injection**: Hilt setup and modules
 
-Base Classes: Repository, UseCase, and ViewModel foundations
-
-Network Layer: OkHttp and Retrofit configuration
-
-Error Management: Centralized error handling and mapping
-
-Resource Wrapper: State management for data operations
-
-Dependency Injection: Hilt setup and modules
-
-Features Module
+### Features Module
 Feature-specific implementations following Clean Architecture:
+- **Domain Layer**: Business logic, entities, and use cases
+- **Data Layer**: Repositories, data sources, and API models
+- **Presentation Layer**: ViewModels, UI components, and screens
 
-Domain Layer: Business logic, entities, and use cases
+## 🛠️ Technical Stack
 
-Data Layer: Repositories, data sources, and API models
+| Category | Technology |
+|----------|------------|
+| **Language** | Kotlin |
+| **Architecture** | Clean Architecture + MVI |
+| **Dependency Injection** | Hilt |
+| **Networking** | Retrofit2 + OkHttp3 |
+| **Asynchronous** | Kotlin Coroutines + Flow |
+| **Image Loading** | Coil |
+| **UI Framework** | Material Design Components |
+| **Testing** | JUnit, Mockito, Espresso |
 
-Presentation Layer: ViewModels, UI components, and screens
+## 📁 Project Structure
 
-🛠️ Technical Stack
-Category	Technology
-Language	Kotlin
-Architecture	Clean Architecture + MVI
-Dependency Injection	Hilt
-Networking	Retrofit2 + OkHttp3
-Asynchronous	Kotlin Coroutines + Flow
-Image Loading	Coil
-UI Framework	Material Design Components
-Testing	JUnit, Mockito, Espresso
-📁 Project Structure
-text
 NYTimesApp/
-├── 📦 core/                    # Core infrastructure module
-│   ├── 🏗️ base/               # Base classes and interfaces
-│   ├── 💉 di/                 # Dependency injection modules
-│   ├── ⚠️ error/              # Error handling utilities
-│   ├── 🌐 network/            # Network configuration
-│   └── 🔧 utils/              # Common utility functions
+├── 📦 core/ # Core infrastructure module
+│ ├── 🏗️ base/ # Base classes and interfaces
+│ ├── 💉 di/ # Dependency injection modules
+│ ├── ⚠️ error/ # Error handling utilities
+│ ├── 🌐 network/ # Network configuration
+│ └── 🔧 utils/ # Common utility functions
 │
-├── 🎯 features/               # Feature modules
-│   └── 📰 articles/           # Articles feature
-│       ├── 💾 data/           # Data layer implementation
-│       ├── 🧠 domain/         # Business logic layer
-│       └── 🎨 presentation/   # UI layer
+├── 🎯 features/ # Feature modules
+│ └── 📰 articles/ # Articles feature
+│ ├── 💾 data/ # Data layer implementation
+│ ├── 🧠 domain/ # Business logic layer
+│ └── 🎨 presentation/ # UI layer
 │
-└── 📱 app/                    # Application module
-    ├── 🚀 MainActivity
-    └── 📋 Application class
-🚀 Getting Started
-Prerequisites
-Android Studio Arctic Fox or later
+└── 📱 app/ # Application module
+├── 🚀 MainActivity
+└── 📋 Application class
 
-JDK 11 or higher
+text
 
-Android SDK 21+
+## 🚀 Getting Started
 
-Installation
-Clone the repository:
+### Prerequisites
+- Android Studio Arctic Fox or later
+- JDK 11 or higher
+- Android SDK 21+
 
-bash
+### Installation
+
+1. **Clone the repository**:
 git clone https://github.com/AliAhmedEissa/Boubyan-Task.git
 cd Boubyan-Task
-Open in Android Studio:
-
-Launch Android Studio
-
-Select "Open an existing project"
-
-Navigate to the cloned directory
-
-Configure API Key:
-
-Create local.properties in the root directory
-
-Add your NY Times API key:
 
 text
+
+2. **Open in Android Studio**:
+   - Launch Android Studio
+   - Select "Open an existing project"
+   - Navigate to the cloned directory
+
+3. **Configure API Key**:
+   - Create `local.properties` in the root directory
+   - Add your NY Times API key:
 NYTIMES_API_KEY=your_api_key_here
-Build and Run:
 
-Sync project with Gradle files
+text
 
-Run the application on device/emulator
+4. **Build and Run**:
+- Sync project with Gradle files
+- Run the application on device/emulator
 
-🔑 API Key Setup
+## 🔑 API Key Setup
+
 To use this application, you need a NY Times API key:
 
-Register: Visit NY Times Developer Portal
+1. **Register**: Visit [NY Times Developer Portal](https://developer.nytimes.com/)
+2. **Create Account**: Sign up and verify your email
+3. **Register App**: Create a new application
+4. **Get API Key**: Copy your assigned API key
+5. **Configure**: Add to `local.properties` file
 
-Create Account: Sign up and verify your email
-
-Register App: Create a new application
-
-Get API Key: Copy your assigned API key
-
-Configure: Add to local.properties file
-
-API Endpoint Used:
+**API Endpoint Used**:
+https://api.nytimes.com/svc/mostpopular/v2/viewed/{period}.json?api-key={your-key}
 
 text
-https://api.nytimes.com/svc/mostpopular/v2/viewed/{period}.json?api-key={your-key}
-🧪 Testing
+
+## 🧪 Testing
+
 The project includes comprehensive testing:
 
-Unit Tests
-bash
+### Unit Tests
 ./gradlew test
-Instrumentation Tests
-bash
+
+text
+
+### Instrumentation Tests
 ./gradlew connectedAndroidTest
-Test Coverage
-Domain layer: Use cases and business logic
 
-Data layer: Repository implementations
+text
 
-Presentation layer: ViewModel behavior
+### Test Coverage
+- Domain layer: Use cases and business logic
+- Data layer: Repository implementations
+- Presentation layer: ViewModel behavior
 
-🤝 Contributing
+## 🤝 Contributing
+
 We welcome contributions! Please follow these steps:
 
-Fork the repository
-
-Create your feature branch:
-
-bash
+1. **Fork** the repository
+2. **Create** your feature branch:
 git checkout -b feature/amazing-feature
-Commit your changes:
 
-bash
+text
+3. **Commit** your changes:
 git commit -m 'Add some amazing feature'
-Push to the branch:
 
-bash
+text
+4. **Push** to the branch:
 git push origin feature/amazing-feature
-Open a Pull Request
 
-Contribution Guidelines
-Follow existing code style and architecture
+text
+5. **Open** a Pull Request
 
-Add tests for new features
+### Contribution Guidelines
+- Follow existing code style and architecture
+- Add tests for new features
+- Update documentation as needed
+- Ensure all tests pass before submitting
 
-Update documentation as needed
+## 📄 License
 
-Ensure all tests pass before submitting
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 🙏 Acknowledgments
 
-🙏 Acknowledgments
-The New York Times for providing the comprehensive API
+- **The New York Times** for providing the comprehensive API
+- **Android Community** for excellent development resources
+- **Contributors** who have helped improve this project
 
-Android Community for excellent development resources
+---
 
-Contributors who have helped improve this project
-
-<div align="center"> <b>Built with ❤️ using modern Android development practices</b> </div>
+<div align="center">
+<b>Built with ❤️ using modern Android development practices</b>
+</div>
