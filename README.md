@@ -1,134 +1,182 @@
-# NY Times App
-
+NY Times App
 A modern Android application that displays articles from The New York Times API, built with Clean Architecture principles and modern Android development practices.
 
-## Screenshots
-<div align="center">
-<table>
-<tr>
-<td>
-<img src="https://drive.google.com/uc?export=view&id=1mYkG8L6QBUyu2cM9EYdUS-5mewHJcVnS" alt="Articles List" width="300"/>
-<br><b>Articles List</b>
-</td>
-<td>
-<img src="https://drive.google.com/uc?export=view&id=1XPFhExcV28EGnB-jwkFdW4lV0e7CU2LA" alt="Article Details" width="300"/>
-<br><b>Article Details</b>
-</td>
-</tr>
-</table>
-</div>
-<!-- Alternative: If Google Drive doesn't work, use this format:
+📱 Screenshots
+<div align="center"> <table> <tr> <td align="center"> <img src="https://drive.google.com/uc?export=view&id=1mYkG8L6QBUyu2cM9EYdUS-5mewHJcVnS" alt="Articles List" width="300"/> <br><b>Articles List</b> </td> <td align="center"> <img src="https://drive.google.com/uc?export=view&id=1XPFhExcV28EGnB-jwkFdW4lV0e7CU2LA" alt="Article Details" width="300"/> <br><b>Article Details</b> </td> </tr> </table> </div> <!-- Alternative: If Google Drive doesn't work, use this format: | Articles List | Article Details | |:---:|:---:| | ![Articles List](screenshots/articles_listd in the `screenshots/` folder of this repository. -->
+✨ Features
+📰 Article Browsing: View most popular articles from NY Times
 
-| Articles List | Article Details |
-|:---:|:---:|
-| ![Articles List](screenshots/articles_list.png) | ![Article Details](screenshots/article_details.png) |
+🔍 Search Functionality: Search articles by keywords
 
-Note: Screenshots are stored in the `screenshots/` folder of this repository.
--->
+🏷️ Advanced Filtering: Filter articles by section and media presence
 
-## Features
+📊 Smart Sorting: Sort articles by views, date, and title
 
-- View most popular articles from NY Times
-- Search articles by keywords
-- Filter articles by section and media presence
-- Sort articles by views, date, and title
-- View detailed article information
-- Responsive and modern UI with animations
-- Error handling and user-friendly messages
+📖 Detailed View: View comprehensive article information
 
-## Architecture
+🎨 Modern UI: Responsive design with smooth animations
 
-The project follows Clean Architecture principles and is organized into the following modules:
+⚠️ Error Handling: User-friendly error messages and states
 
-### Core Module
+🏗️ Architecture
+The project follows Clean Architecture principles and is organized into modular components:
 
-Contains base classes and utilities used across the application:
+Core Module
+Contains shared infrastructure and utilities:
 
-- Base classes for Repository, UseCase, and ViewModel
-- Network handling with OkHttp and Retrofit
-- Error handling and mapping
-- Resource wrapper for handling data states
-- Dependency injection setup
+Base Classes: Repository, UseCase, and ViewModel foundations
 
-### Features Module
+Network Layer: OkHttp and Retrofit configuration
 
-Contains feature-specific implementations:
+Error Management: Centralized error handling and mapping
 
-- Articles feature with list and detail views
-- Domain layer with entities and use cases
-- Data layer with repositories and data sources
-- Presentation layer with ViewModels and UI components
+Resource Wrapper: State management for data operations
 
-## Technical Stack
+Dependency Injection: Hilt setup and modules
 
-- **Language**: Kotlin
-- **Architecture**: Clean Architecture with MVI
-- **Dependency Injection**: Hilt
-- **Networking**: Retrofit2 + OkHttp3
-- **Asynchronous**: Kotlin Coroutines + Flow
-- **Image Loading**: Coil
-- **UI**: Material Design Components
-- **Testing**: JUnit, Mockito, Espresso
+Features Module
+Feature-specific implementations following Clean Architecture:
 
-## Project Structure
+Domain Layer: Business logic, entities, and use cases
 
-```
+Data Layer: Repositories, data sources, and API models
+
+Presentation Layer: ViewModels, UI components, and screens
+
+🛠️ Technical Stack
+Category	Technology
+Language	Kotlin
+Architecture	Clean Architecture + MVI
+Dependency Injection	Hilt
+Networking	Retrofit2 + OkHttp3
+Asynchronous	Kotlin Coroutines + Flow
+Image Loading	Coil
+UI Framework	Material Design Components
+Testing	JUnit, Mockito, Espresso
+📁 Project Structure
+text
 NYTimesApp/
-├── core/                      # Core module
-│   ├── base/                 # Base classes
-│   ├── di/                   # Dependency injection
-│   ├── error/               # Error handling
-│   ├── network/             # Network related code
-│   └── utils/               # Utility functions
+├── 📦 core/                    # Core infrastructure module
+│   ├── 🏗️ base/               # Base classes and interfaces
+│   ├── 💉 di/                 # Dependency injection modules
+│   ├── ⚠️ error/              # Error handling utilities
+│   ├── 🌐 network/            # Network configuration
+│   └── 🔧 utils/              # Common utility functions
 │
-├── features/                 # Features module
-│   └── articles/            # Articles feature
-│       ├── data/           # Data layer
-│       ├── domain/         # Domain layer
-│       └── presentation/   # Presentation layer
+├── 🎯 features/               # Feature modules
+│   └── 📰 articles/           # Articles feature
+│       ├── 💾 data/           # Data layer implementation
+│       ├── 🧠 domain/         # Business logic layer
+│       └── 🎨 presentation/   # UI layer
 │
-└── app/                     # Application module
-```
+└── 📱 app/                    # Application module
+    ├── 🚀 MainActivity
+    └── 📋 Application class
+🚀 Getting Started
+Prerequisites
+Android Studio Arctic Fox or later
 
-## Setup
+JDK 11 or higher
 
-1. Clone the repository:
+Android SDK 21+
 
-```bash
+Installation
+Clone the repository:
+
+bash
 git clone https://github.com/AliAhmedEissa/Boubyan-Task.git
-```
+cd Boubyan-Task
+Open in Android Studio:
 
-2. Open the project in Android Studio
+Launch Android Studio
 
-3. Add your NY Times API key:
+Select "Open an existing project"
 
-   - Create a file named `local.properties` in the root directory
-   - Add your API key: `NYTIMES_API_KEY=your_api_key_here`
+Navigate to the cloned directory
 
-4. Build and run the project
+Configure API Key:
 
-## API Key
+Create local.properties in the root directory
 
-To use this app, you need to obtain an API key from The New York Times:
+Add your NY Times API key:
 
-1. Visit [NY Times Developer Portal](https://developer.nytimes.com/)
-2. Create an account and register your application
-3. Get your API key
-4. Add it to the `local.properties` file
+text
+NYTIMES_API_KEY=your_api_key_here
+Build and Run:
 
-## Contributing
+Sync project with Gradle files
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+Run the application on device/emulator
 
-## License
+🔑 API Key Setup
+To use this application, you need a NY Times API key:
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Register: Visit NY Times Developer Portal
 
-## Acknowledgments
+Create Account: Sign up and verify your email
 
-- The New York Times for providing the API
-- All contributors who have helped shape this project
+Register App: Create a new application
+
+Get API Key: Copy your assigned API key
+
+Configure: Add to local.properties file
+
+API Endpoint Used:
+
+text
+https://api.nytimes.com/svc/mostpopular/v2/viewed/{period}.json?api-key={your-key}
+🧪 Testing
+The project includes comprehensive testing:
+
+Unit Tests
+bash
+./gradlew test
+Instrumentation Tests
+bash
+./gradlew connectedAndroidTest
+Test Coverage
+Domain layer: Use cases and business logic
+
+Data layer: Repository implementations
+
+Presentation layer: ViewModel behavior
+
+🤝 Contributing
+We welcome contributions! Please follow these steps:
+
+Fork the repository
+
+Create your feature branch:
+
+bash
+git checkout -b feature/amazing-feature
+Commit your changes:
+
+bash
+git commit -m 'Add some amazing feature'
+Push to the branch:
+
+bash
+git push origin feature/amazing-feature
+Open a Pull Request
+
+Contribution Guidelines
+Follow existing code style and architecture
+
+Add tests for new features
+
+Update documentation as needed
+
+Ensure all tests pass before submitting
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+🙏 Acknowledgments
+The New York Times for providing the comprehensive API
+
+Android Community for excellent development resources
+
+Contributors who have helped improve this project
+
+<div align="center"> <b>Built with ❤️ using modern Android development practices</b> </div>
