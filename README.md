@@ -71,7 +71,7 @@ NYTimesApp/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/NYTimesApp.git
+git clone https://github.com/AliAhmedEissa/Boubyan-Task.git
 ```
 
 2. Open the project in Android Studio
